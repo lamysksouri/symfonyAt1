@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+    {% block title %}{{parent()}}
+        L2DSI
+    {% endblock %}
+
+{% block body%}
+    <h1>Bienvenu sur notre site</h1>
+    <h2>Menu</h2>
+    <a href="{{path('blog_acceuil')}}">Acceuil</a>
+    <a href="{{path('blog_user',{'name': 'bawbaw'})}}">User</a>
+    <a href="{{path('blog_article',{'id':33, 'name':'heheh'})}}">Article</a>
+{% endblock %}
